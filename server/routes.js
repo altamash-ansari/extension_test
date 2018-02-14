@@ -25,7 +25,7 @@ module.exports = {
 	"/v1/functions/altamash": {
 		GET: function(req, res){
 			this.resSuccess(req, res, {
-				altamash: "is aagau :D"
+				altamash: "ansari :D"
 			})
 		}
 	},
