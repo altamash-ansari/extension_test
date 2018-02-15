@@ -24,8 +24,9 @@ module.exports = {
 	},
 	"/v1/functions/altamash": {
 		GET: function(req, res){
+			req.logger.log("altamash called")
 			this.resSuccess(req, res, {
-				altamash: "is aagau :D"
+				altamash: "ansari :D"
 			})
 		}
 	},
