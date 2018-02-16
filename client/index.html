@@ -5,8 +5,19 @@
 	<h1>My First Heading</h1>
 
 	<p>Altamash Ansari master</p>
-	<button>OK</button>
-
+	<button onclick="getData()">OK</button>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="javascript"></script>
+	<script type="javascript">
+		function getData() {
+			$.ajax({
+				type: "GET",
+				url: "/api/v1/functions/altamash",
+				success: function(data, status){
+					console.log(data)
+				}
+			});
+		}
+	</script>
 </body>
 </html>
 
