@@ -1,12 +1,24 @@
 {
   "name": "extension_test",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm install ./custom-packages/built-extension-sdk-1.0.0.tgz",
-    "test"      : "echo \"Error: no test specified\" && exit 1",
-    "start"     : "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "built-extension-sdk": "file:custom-packages/built-extension-sdk-1.0.0.tgz"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altamash-ansari/extension_test.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/altamash-ansari/extension_test/issues"
+  },
+  "homepage": "https://github.com/altamash-ansari/extension_test#readme",
+  "description": ""
 }
