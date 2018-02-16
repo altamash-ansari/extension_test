@@ -13,8 +13,15 @@
 			$.ajax({
 				type: "GET",
 				url: "/api/v1/functions/altamash",
+				beforeSend: function(xhr){
+					xhr.setRequestHeader('application_api_key', 'bltd470ad1e7ce19b96');
+					xhr.setRequestHeader('secret_key', 'altamash');
+				},
 				success: function(data, status){
 					console.log(data)
+					$('.data').text(data);
+				},
+				error: function(data, status){
 					$('.data').text(data);
 				}
 			});
