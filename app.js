@@ -1,5 +1,5 @@
 var Built = require('built-extension-sdk')
-var nock  = require('nock')
+
 // Initiate application
 var app = Built.App('bltd470ad1e7ce19b96')
 // .setHost('localhost')
