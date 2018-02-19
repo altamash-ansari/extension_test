@@ -105,6 +105,35 @@ module.exports = {
 			}
 		}
 	},
+	"/v1/functions/anyAuthLogin" : {
+		POST : function(req, res) {
+			var that     = this
+			var builtApp = req.builtApp
+
+			builtApp = builtApp.setMasterKey("blta49594c249a48599")
+
+			req.logger.log(req.payload)
+
+			var User = builtApp.User
+
+			req.logger.log(User.generateAuthToken)
+
+			var query = builtApp.Class("built_io_application_user").Query()
+
+			query = query.where("username", req.payload.data.username)
+
+			return User.generateAccessToken(query, false)
+			.then(function(user) {
+				req.logger.log(user.toJSON())
+
+				return that.resSuccess(req, res, user.toJSON())
+			})
+			.catch(function(err) {
+				req.logger.log(err)
+				return that.resError(req, res, err)
+			})
+		}
+	},
 	"/v1/classes/person/objects": {
 		POST: {
 			_pre: function(req, res) {
