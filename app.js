@@ -2,7 +2,7 @@ var Built = require('built-extension-sdk')
 var apiKey = "bltc3d662efa9944ee5"
 var masterKey = "bltcca971a54cfb475c"
 var apiHost = "stag-api.built.io"
-var env     = "dev"
+var env     = "stag"
 
 if(env === "dev"){
 	apiKey = "blt7ff1904c6d3d9219"
