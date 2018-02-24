@@ -1,13 +1,13 @@
 var Built = require('built-extension-sdk')
 
 // Initiate application
-var app = Built.App('blt7ff1904c6d3d9219')
+var app = Built.App('bltc3d662efa9944ee5')
 // .setHost('localhost')
 // .setPort(8000)
-.setHost("dev-api.built.io")
+.setHost("stag-api.built.io")
 .setProtocol("https")
 // .setPort(80)
-.setMasterKey('blta49594c249a48599')
+.setMasterKey('bltcca971a54cfb475c')
 
 var extensionSDK = app.Extension({
 	secret_key     : 'altamash',
