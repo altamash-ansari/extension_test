@@ -4,11 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "preinstall": "npm install custom-packages/built-extension-sdk-1.0.0.tgz"
+    "start": "node app.js"
   },
   "license": "ISC",
   "dependencies": {
+    "built-extension-sdk": "file:custom-packages/built-extension-sdk-1.0.0.tgz",
     "when": "3.7.3"
   },
   "devDependencies": {},
