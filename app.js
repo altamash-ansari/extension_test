@@ -30,6 +30,7 @@ switch(env){
 // Initiate application
 var app = Built.App(apiKey)
 .setHost(apiHost)
+.setProtocol("https")
 .setMasterKey(masterKey)
 
 var extensionSDK = app.Extension({
