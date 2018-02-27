@@ -4,7 +4,7 @@ var masterKey    = "blt06ac6499bdf737a3"
 var apiHost      = "stag-api.built.io"
 var secretKey    = "altamash"
 var extensionKey = "blt_ext_default"
-var env          = "stag"
+var env          = "dev"
 
 switch(env){
 	case "dev": {
