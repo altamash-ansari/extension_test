@@ -16,4 +16,4 @@ var extensionSDK = app.Extension({
 	routes         : require('./server/routes')
 })
 
-return extensionSDK.start(9000)
+return extensionSDK.start(9001)
