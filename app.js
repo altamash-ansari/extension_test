@@ -1,10 +1,10 @@
 var Built        = require('built-extension-sdk')
-var apiKey       = "blt4a6f4db43349fb19"
-var masterKey    = "blt06ac6499bdf737a3"
-var apiHost      = "stag-api.built.io"
+var apiKey       = "blt3e47f5d48898b6eb"
+var masterKey    = "blt2a6c90888b1597ab"
+var apiHost      = "api.built.io"
 var secretKey    = "altamash"
 var extensionKey = "blt_ext_default"
-var env          = "stag"
+var env          = "prod"
 
 switch(env){
 	case "dev": {
@@ -17,6 +17,12 @@ switch(env){
 		apiKey    = "blt03e4edbd8910fa5f"
 		masterKey = "bltd393443b965b82b3"
 		apiHost   = "dev-api.built.io"
+		break;
+	}
+	case "stag": {
+		apiKey    = "blt4a6f4db43349fb19"
+		masterKey = "blt06ac6499bdf737a3"
+		apiHost   = "stag-api.built.io"
 		break;
 	}
 	case "stag-tp": {
