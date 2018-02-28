@@ -4,7 +4,7 @@
 
 	<h1>My First Heading</h1>
 
-	<p>Altamash Ansari master ssl redeploy</p>
+	<p>Altamash Ansari master ssl auto-deployed</p>
 	<button onclick="getData()">OK</button>
 	<div class="data">The data is:</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
@@ -14,7 +14,7 @@
 				type: "GET",
 				url: "/api/v1/functions/altamash",
 				beforeSend: function(xhr){
-					xhr.setRequestHeader('application_api_key', 'blt7ff1904c6d3d9219');
+					xhr.setRequestHeader('application_api_key', 'blt3e47f5d48898b6eb');
 					xhr.setRequestHeader('secret_key', 'altamash');
 				},
 				success: function(data, status){
