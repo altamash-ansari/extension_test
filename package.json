@@ -8,7 +8,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "built-extension-sdk": "file:custom-packages/built-extension-sdk-1.0.0.tgz",
+    "built-extension-sdk": "1.0.2",
     "when": "3.7.3"
   },
   "devDependencies": {},
