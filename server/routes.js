@@ -105,6 +105,14 @@ module.exports = {
 			}
 		}
 	},
+	"/v1/functions/timeOut" : {
+		POST: function(req, res){
+			var that = this
+			return {
+				"timeout":"aaaa"
+			}
+		}
+	},
 	"/v1/functions/anyAuthLogin" : {
 		POST : function(req, res) {
 			var that     = this
