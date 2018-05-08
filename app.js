@@ -4,12 +4,14 @@ var masterKey    = "blt15b734468f3e571a"
 var apiHost      = "api.built.io"
 var secretKey    = "altamash"
 var extensionKey = "blt_ext_default"
-var env          = "prod"
+var env          = "stag"
 
 switch(env){
 	case "dev": {
-		apiKey    = "blt7ff1904c6d3d9219"
-		masterKey = "blta49594c249a48599"
+		// apiKey    = "blt7ff1904c6d3d9219"
+		// masterKey = "blta49594c249a48599"
+		apiKey    = "blt2965956f893b50bd"
+		masterKey = "blt6f4947444ccb6934"
 		apiHost   = "dev-api.built.io"
 		break;
 	}
