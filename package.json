@@ -8,7 +8,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "built-extension-sdk": "1.0.2",
+    "built-extension-sdk": "2.0.2",
     "when": "3.7.3"
   },
   "devDependencies": {},

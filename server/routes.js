@@ -1,28 +1,28 @@
 var when = require('when')
 
 module.exports = {
-	"/v1/functions/swapnil": {
+	"/functions/swapnil": {
 		GET: function(req, res){
 			this.resSuccess(req, res, {
 				swapnil: "is awesome"
 			})
 		}
 	},
-	"/v1/functions/chinu": {
+	"/functions/chinu": {
 		GET: function(req, res){
 			this.resSuccess(req, res, {
 				chinu: "happy birthdayyy"
 			})
 		}
 	},
-	"/v1/functions/smita": {
+	"/functions/smita": {
 		GET: function(req, res){
 			this.resSuccess(req, res, {
 				smita: "is awesome"
 			})
 		}
 	},
-	"/v1/functions/altamash": {
+	"/functions/altamash": {
 		GET: function(req, res){
 			req.logger.log("altamash called")
 			this.resSuccess(req, res, {
@@ -30,14 +30,14 @@ module.exports = {
 			})
 		}
 	},
-	"/v1/functions/rohini": {
+	"/functions/rohini": {
 		GET: function(req, res){
 			this.resSuccess(req, res, {
 				Rohini: "is aagau :D"
 			})
 		}
 	},
-	"/v1/functions/abhijeet": {
+	"/functions/abhijeet": {
 		GET: function(req, res){
 			this.resSuccess(req, res, {
 				working: "GET call"
@@ -54,7 +54,7 @@ module.exports = {
 			})
 		}
 	},
-	"/v1/functions/createPerson": {
+	"/functions/createPerson": {
 		POST: function(req, res){
 			req.logger.log("request payload", req.payload)
 			req.logger.log("App options", req.builtApp.options)
@@ -69,11 +69,11 @@ module.exports = {
 			})
 		}
 	},
-	"/v1/functions/test" : {
+	"/functions/test" : {
 		POST: function(req, res){
 			var that = this
 			req.builtApp = req.builtApp
-			
+
 			var response = {}
 
 			return req.builtApp.Class('person').Object(req.payload.data.person)
@@ -89,7 +89,7 @@ module.exports = {
 			})
 		}
 	},
-	"/v1/functions/validError" : {
+	"/functions/validError" : {
 		POST: function(req, res){
 			var that = this
 			return that.resError(req, res, {
@@ -97,7 +97,7 @@ module.exports = {
 			})
 		}
 	},
-	"/v1/functions/throwError" : {
+	"/functions/throwError" : {
 		POST: function(req, res){
 			var that = this
 			throw {
@@ -105,7 +105,7 @@ module.exports = {
 			}
 		}
 	},
-	"/v1/functions/timeOut" : {
+	"/functions/timeOut" : {
 		POST: function(req, res){
 			var that = this
 			return {
@@ -113,7 +113,7 @@ module.exports = {
 			}
 		}
 	},
-	"/v1/functions/anyAuthLogin" : {
+	"/functions/anyAuthLogin" : {
 		POST : function(req, res) {
 			var that     = this
 			var builtApp = req.builtApp
@@ -142,7 +142,7 @@ module.exports = {
 			})
 		}
 	},
-	"/v1/classes/person/objects": {
+	"/classes/person/objects": {
 		POST: {
 			_pre: function(req, res) {
 				req.logger.log("person hook pre")
@@ -159,7 +159,7 @@ module.exports = {
 			}
 		}
 	}/*,
-	"/v1/classes/person/objects/:objectUid": {
+	"/classes/person/objects/:objectUid": {
 		PUT:{
 			_pre: function(req, res){
 				req.logger.warn("warn")
@@ -180,7 +180,7 @@ module.exports = {
 		DELETE : {
 			_pre: function(req, res){
 				console.log("_pre")
-				return when.resolve()	
+				return when.resolve()
 			},
 			_post: function(req, res){
 				console.log("_post")
